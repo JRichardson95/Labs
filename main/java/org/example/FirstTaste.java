@@ -4,18 +4,20 @@ public class FirstTaste {
     int aantalReizigers;
     float perWagon;
 
-    public float getPerWagon() {
-        return perWagon;
-    }
-
-    public void setPerWagon(float perWagon) {
-        this.perWagon = perWagon;
-    }
-
     public void doeIets(){
-         setPerWagon(((float) aantalReizigers) / 4);
-
-        System.out.println("Aantal reizigers is :  " + aantalReizigers);
-        System.out.println("Aantal reizigers per wagon: " + getPerWagon());
+         perWagon = ((float) aantalReizigers) / 4;
+         print();
     }
+
+    public void doeNogIets(){
+        perWagon = aantalReizigers / 5f;
+        print();
+    }
+
+    public void print(){
+        System.out.println("\n");
+        System.out.println("Aantal reizigers is :  " + aantalReizigers);
+        System.out.println("Aantal reizigers per wagon: " + perWagon);
+    }
+
 }
