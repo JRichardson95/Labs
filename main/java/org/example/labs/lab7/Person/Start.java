@@ -16,7 +16,7 @@ public class Start {
             System.out.println(e);
         }
 
-        System.out.println(p.numberOfPossibleGenders());
+        System.out.println(Person.numberOfPossibleGenders());
 
         System.out.println(p.toString());
         System.out.println(p.equals(q));

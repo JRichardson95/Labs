@@ -23,6 +23,5 @@ public class Start {
 //        fibo.run(4,5,6);
 //        fibo.goldenRatio(10);
 
-        System.out.println(method.fractorialTest(5));
     }
 }

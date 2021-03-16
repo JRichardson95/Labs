@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Person {
 
-    private String name;
+    private final String name;
     private int age;
     private Gender gender;
     final static int MAXIMUM_AGE = 131;

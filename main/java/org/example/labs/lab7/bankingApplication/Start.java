@@ -1,38 +1,43 @@
 package org.example.labs.lab7.bankingApplication;
 
+import org.example.labs.lab7.bankingApplication.model.AccountHolder;
+import org.example.labs.lab7.bankingApplication.model.Account;
+import org.example.labs.lab7.bankingApplication.service.AccountService;
+
 import java.util.ArrayList;
 
 public class Start {
     public static void main(String[] args) {
-        AccountHolder accountHolder1 = new AccountHolder("Jay", 25);
-        AccountHolder accountHolder2 = new AccountHolder("Test",24);
-        AccountHolder accountHolder3 = new AccountHolder("Test1",23);
-        AccountHolder accountHolder4 = new AccountHolder("Test2",22);
+        AccountHolder accountHolder1 = new AccountHolder("Jay");
+        AccountHolder accountHolder2 = new AccountHolder("Test");
+        AccountHolder accountHolder3 = new AccountHolder("Test1");
+        AccountHolder accountHolder4 = new AccountHolder("Test2");
 
-        BankAccount account = new BankAccount(accountHolder1, 1023, 1000.50, 1.1);
-        BankAccount account1 = new BankAccount(accountHolder2, 1022, 44.66, 1.02);
+        Account account = new Account(accountHolder1, 1023, 1000.50, 1.1);
+        Account account1 = new Account(accountHolder2, 1022, 44.66, 1.02);
+        AccountService accountService = new AccountService();
 
         System.out.println(account.toString() + "\n");
         try{
-            account.transfer(account1, 11.00);
+            accountService.transfer(account, account1, 11.00);
         } catch (Exception e){
             System.out.println(e +"\n");
         }
         System.out.println(account.toString() + "\n");
         System.out.println(account1.toString() + "\n");
 
-        System.out.println(account.interestEarned());
+        System.out.println(accountService.interestEarned(account));
 
-        BankAccount test = new BankAccount().createNewAccount();
+        Account test = new AccountService().createNewAccount();
 
         System.out.println(test.toString());
 
-        ArrayList<BankAccount> listOfAccount = new ArrayList<BankAccount>();
+        ArrayList<Account> listOfAccount = new ArrayList<Account>();
         listOfAccount.add(account);
         listOfAccount.add(account1);
         listOfAccount.add(test);
 
-        BankAccount.allAccounts(listOfAccount);
+        accountService.allAccounts(listOfAccount);
 
     }
 }
