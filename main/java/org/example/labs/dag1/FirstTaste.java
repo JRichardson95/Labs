@@ -1,4 +1,4 @@
-package org.example;
+package org.example.labs.dag1;
 
 public class FirstTaste {
     int aantalReizigers;
@@ -18,6 +18,16 @@ public class FirstTaste {
         System.out.println("\n");
         System.out.println("Aantal reizigers is :  " + aantalReizigers);
         System.out.println("Aantal reizigers per wagon: " + perWagon);
+    }
+
+    public void advancedHello(String[] Args){
+        if(Args.length != 0){
+            for(int i = 0 ; i <= Args.length; i++){
+                System.out.println("Hello " + Args[i]);
+            }
+        } else {
+            System.out.println("Hello World");
+        }
     }
 
 }
