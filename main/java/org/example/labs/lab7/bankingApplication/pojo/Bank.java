@@ -1,4 +1,4 @@
-package org.example.labs.lab7.bankingApplication.model;
+package org.example.labs.lab7.bankingApplication.pojo;
 
 import java.util.ArrayList;
 

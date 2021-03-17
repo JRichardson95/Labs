@@ -1,7 +1,4 @@
-package org.example.labs.lab7.bankingApplication.model;
-
-import java.util.ArrayList;
-import java.util.Scanner;
+package org.example.labs.lab7.bankingApplication.pojo;
 
 public class Account {
     private AccountHolder accountHolder;

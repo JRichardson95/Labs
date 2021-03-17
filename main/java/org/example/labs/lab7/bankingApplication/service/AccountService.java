@@ -1,7 +1,7 @@
 package org.example.labs.lab7.bankingApplication.service;
 
-import org.example.labs.lab7.bankingApplication.model.Account;
-import org.example.labs.lab7.bankingApplication.model.AccountHolder;
+import org.example.labs.lab7.bankingApplication.pojo.Account;
+import org.example.labs.lab7.bankingApplication.pojo.AccountHolder;
 
 import java.util.ArrayList;
 import java.util.Scanner;
