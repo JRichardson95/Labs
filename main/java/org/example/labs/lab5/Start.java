@@ -6,6 +6,9 @@ public class Start {
     public static void main(String[] args) {
         Methods method = new Methods();
         Fibo fibo = new Fibo();
+
+
+        System.out.println(fibo.goldenRatio(46));
 //        ArrayList<Integer> numbers = new ArrayList();
 //        numbers.add(1);
 //        numbers.add(2);

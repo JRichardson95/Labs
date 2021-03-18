@@ -1,5 +1,7 @@
 package org.example.labs.lab4.hourglass;
 
+import org.example.labs.lab4.exception.EvenNumberException;
+
 import java.util.Scanner;
 
 public class Hourglass {
@@ -8,7 +10,7 @@ public class Hourglass {
     public void askNumber(){
         Scanner scanner = new Scanner(System.in);
         if (tryCounter != 0){
-            System.out.println("Please enter an uneven number: ");
+            System.out.println("Please enter an odd number: ");
             try {
                 int numberInput = scanner.nextInt();
                 evenCheck(numberInput);
@@ -22,11 +24,10 @@ public class Hourglass {
         }
     }
 
-    public void evenCheck(int numberToCheck) {
+    public void evenCheck(int numberToCheck) throws EvenNumberException {
         if (numberToCheck % 2 == 0) {
             tryCounter--;
-            System.out.println("Can't enter an even number please try again");
-            askNumber();
+            throw new EvenNumberException("Please enter an even number");
         } else {
             print(numberToCheck);
         }
