@@ -22,5 +22,8 @@ public class Start {
         System.out.println(p.equals(q));
         System.out.println(q.hashCode());
 
+        int[] getallen;
+
+
     }
 }
