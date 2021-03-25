@@ -22,6 +22,10 @@ public class Person extends Human {
         this.gender = gender;
     }
 
+    public static int getMaximumAge() {
+        return MAXIMUM_AGE;
+    }
+
     public Gender getGender() {
         return gender;
     }
