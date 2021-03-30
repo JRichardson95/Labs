@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 
 public class MyIntCollection <T>{
-    private T[] items = (T[]) new Integer[4];
+    private T[] items = (T[]) new Object[4];
     private int length;
 
     public MyIntCollection() {
@@ -24,7 +24,7 @@ public class MyIntCollection <T>{
 
     private void doubleItems(){
         T[] itemCopy = items;
-        items = (T[]) new Integer[items.length*2];
+        items = (T[]) new Object[items.length*2];
 
         for (int i = 0; i < itemCopy.length; i++) {
             items[i] = itemCopy[i];
