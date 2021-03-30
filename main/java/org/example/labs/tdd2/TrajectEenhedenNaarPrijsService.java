@@ -1,4 +1,4 @@
-package org.example.labs.tdd;
+package org.example.labs.tdd2;
 
 public class TrajectEenhedenNaarPrijsService {
     public int getPriceTrajectEenheden(int aantalTrajectEenheden){

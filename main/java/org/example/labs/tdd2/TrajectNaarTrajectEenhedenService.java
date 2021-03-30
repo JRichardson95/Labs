@@ -1,4 +1,4 @@
-package org.example.labs.tdd;
+package org.example.labs.tdd2;
 
 import java.util.Random;
 

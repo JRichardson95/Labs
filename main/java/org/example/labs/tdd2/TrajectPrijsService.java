@@ -1,4 +1,4 @@
-package org.example.labs.tdd;
+package org.example.labs.tdd2;
 
 public class TrajectPrijsService {
     private TrajectNaarTrajectEenhedenService es = new TrajectNaarTrajectEenhedenService();
