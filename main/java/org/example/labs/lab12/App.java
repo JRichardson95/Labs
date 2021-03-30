@@ -11,7 +11,7 @@ public class App {
     private void start() {
         Person p = new Person("Jan", 45, Gender.MALE);
         
-        System.out.println(p.value());
+//        System.out.println(p.value());
 
         System.out.println(p.getMessage());
     }
