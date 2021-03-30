@@ -1,7 +1,7 @@
 package org.example.labs.lab10;
 
 import org.example.labs.lab10.exception.LevelTooHighException;
-import org.example.labs.lab7.Person.Gender;
+import org.example.labs.lab07.Person.Gender;
 
 import java.util.List;
 

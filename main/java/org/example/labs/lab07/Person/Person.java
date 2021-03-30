@@ -1,10 +1,8 @@
-package org.example.labs.lab10;
-
-import org.example.labs.lab07.Person.Gender;
+package org.example.labs.lab07.Person;
 
 import java.util.Objects;
 
-public class Person extends Human {
+public class Person {
 
     private final String name;
     private int age;
@@ -20,10 +18,6 @@ public class Person extends Human {
     public Person(String name, int age, Gender gender) {
         this(name, age);
         this.gender = gender;
-    }
-
-    public static int getMaximumAge() {
-        return MAXIMUM_AGE;
     }
 
     public Gender getGender() {
@@ -44,7 +38,7 @@ public class Person extends Human {
 
     public void haveBirthday() throws Exception {
         if ((age+1) != MAXIMUM_AGE){
-            setAge(++age);
+        setAge(++age);
         } else {
             throw new Exception("PersonDiedException");
         }
@@ -73,9 +67,4 @@ public class Person extends Human {
         return Objects.hash(name, getAge(), getGender());
     }
 
-
-    @Override
-    public String greet(){
-        return "Hello, my name is " + this.name + ". Nice to meet you!";
-    }
 }

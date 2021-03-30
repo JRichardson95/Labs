@@ -1,6 +1,6 @@
 package org.example.labs.lab10;
 
-import org.example.labs.lab7.Person.Gender;
+import org.example.labs.lab07.Person.Gender;
 
 public class Teacher extends Person {
 

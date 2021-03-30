@@ -1,15 +1,24 @@
-package org.example.labs.lab10;
+package org.example.labs.lab12;
 
 import org.example.labs.lab07.Person.Gender;
+import org.example.labs.lab10.Human;
 
 import java.util.Objects;
 
 public class Person extends Human {
-
     private final String name;
     private int age;
     private Gender gender;
+    private String message;
     final static int MAXIMUM_AGE = 131;
+
+    @MyAnnotation2
+    public void value() {
+    }
+
+    public String getMessage() {
+        return message;
+    }
 
     public Person(String name, int age) {
         this.name = name;

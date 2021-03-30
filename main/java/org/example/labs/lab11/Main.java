@@ -1,7 +1,7 @@
 package org.example.labs.lab11;
 
 import org.example.labs.lab10.Human;
-import org.example.labs.lab7.Person.Gender;
+import org.example.labs.lab07.Person.Gender;
 
 public class Main {
     public static void main(String[] args) {
